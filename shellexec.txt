@@ -1,0 +1,13 @@
+1st
+
+imageName=atikansiit/mygitweb:1.4
+containerName=mygitweb
+
+sudo docker stop $containerName 
+sudo docker rm -f $containerName
+sudo docker run -d --name $containerName -e MY_HOST=MyDockerOnVM -p 8080:80 $imageName
+
+
+2nd
+
+robot /home/ubuntu/tutorial/test_check4_without_GUI.robot
